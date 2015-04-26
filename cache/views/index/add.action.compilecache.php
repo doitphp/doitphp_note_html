@@ -1,0 +1,26 @@
+<?php if(!defined('IN_DOIT')) exit(); ?>
+<fieldset>
+<legend>发表留言：</legend>
+<table border="0" cellspacing="5" cellpadding="0">
+<form name="submitForm" method="post" action="<?php echo $this->getActionUrl('ajax_addpost'); ?>" id="addpost_form">
+  <tbody>
+    <tr>
+      <td width="100" height="30" align="right">用户名：</td>
+      <td align="left"><input type="text" name="username" class="text" id="username"></td>
+    </tr>
+    <tr>
+      <td height="30" align="right">标 题：</td>
+      <td align="left"><input type="text" name="title" class="text" id="title"></td>
+    </tr>
+    <tr>
+      <td height="250" align="right">内 容：</td>
+      <td align="left"><textarea name="content" id="content"></textarea></td>
+    </tr>
+    <tr>
+      <td height="30">&nbsp;</td>
+      <td align="left"><input type="reset" name="resetButton" value="重值"><input type="submit" name="submitButton" value="提交"></td>
+    </tr>
+  </tbody>
+</form>
+</table>
+</fieldset>

@@ -1,0 +1,23 @@
+<div class="nav">
+    <ul>
+<!--{if $controller == 'index' && $action == 'index'}-->
+        <li class="current">首页</li>
+<!--{else}-->
+        <li><a href="<!--{php echo $this->createUrl('index/index');}-->">首页</a></li>
+<!--{/if}-->
+<!--{if $controller == 'index' && $action == 'add'}-->
+        <li class="current">发表留言</li>
+<!--{else}-->
+        <li><a href="<!--{php echo $this->createUrl('index/add');}-->">发表留言</a></li>
+<!--{/if}-->
+<!--{if $controller == 'post' && $action == 'reply'}-->
+        <li class="current">回复留言</li>
+<!--{/if}-->
+<!--{if $controller == 'post' && $action == 'edit'}-->
+        <li class="current">编辑留言</li>
+<!--{/if}-->
+<!--{if $controller == 'index' && $action == 'login'}-->
+        <li class="current">管理员登陆</li>
+<!--{/if}-->
+    </ul>
+</div>
